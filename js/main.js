@@ -1,4 +1,4 @@
-const apiUrl = "http://52.201.255.139:5000/"; // Cambia a tu IP pública si es necesario
+const apiUrl = "http://50.17.128.86:5000/"; // Cambia a tu IP pública si es necesario
 let clientIp = "0.0.0.0"; // Valor predeterminado en caso de error
 
 const statusMap = {
