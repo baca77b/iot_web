@@ -3,16 +3,16 @@ let clientIp = "0.0.0.0"; // Valor predeterminado en caso de error
 
 const statusMap = {
   1: "Adelante",
-  2: "Atrás",
+  2: "Atras",
   3: "Detener",
-  4: "Vuelta adelante derecha",
-  5: "Vuelta adelante izquierda",
-  6: "Vuelta atrás derecha",
-  7: "Vuelta atrás izquierda",
-  8: "Giro 90° derecha",
-  9: "Giro 90° izquierda",
-  10: "Giro 360° derecha",
-  11: "Giro 360° izquierda"
+  4: "derecha",
+  5: "izquierda",
+  6: "derecha_atras",
+  7: "izquierda_atras",
+  8: "Giro90derecha",
+  9: "Giro90izquierda",
+  10: "Giro360derecha",
+  11: "Giro360izquierda"
 };
 
 async function getClientIp() {
@@ -37,7 +37,7 @@ async function fetchLastStatus() {
 
 async function sendCommand(status_clave) {
   const payload = {
-    name: "Dispostivo IoT de Víctor",
+    name: "Dispostivo IoT de Beco",
     ip: clientIp,
     status_clave: status_clave,
     status_texto: statusMap[status_clave]
